@@ -1,6 +1,6 @@
 # cinema-ticket-booking
 
-BHC project on 2nd year Bvoc it 
+Bisop Heber College project on 2nd year Bvoc it 
 M.Sankaranarayanan
 215915143
 
