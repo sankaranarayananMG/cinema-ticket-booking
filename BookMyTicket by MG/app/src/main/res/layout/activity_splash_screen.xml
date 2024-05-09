@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="#d32f2f">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/ticketimg"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ticket"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ticketimg"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:letterSpacing="0.1"
+        tools:ignore="MissingConstraints"
+        android:text="BookMyTicket"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="38sp"
+        android:textColor="#ffffff"/>
+    </RelativeLayout>
+</RelativeLayout>

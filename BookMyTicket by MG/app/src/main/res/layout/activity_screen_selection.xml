@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenSelection"
+    android:background="#fff">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                tools:background="@tools:sample/backgrounds/scenic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Godzilla vs Kong"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="PG-13 | 1h 53m"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Action, Adventure, Fantasy, Science Fiction"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:id="@+id/ll1"
+        android:layout_below="@+id/cardview"
+        android:weightSum="3">
+    <EditText
+        android:layout_below="@+id/cardview"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/in_date"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:editable="false"
+        android:layout_margin="5dp"
+        android:layout_weight="2"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:text="SELECT DATE"
+        android:id="@+id/btn_date"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll1"
+        android:id="@+id/cardview1"
+        android:layout_height="150dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="#fff"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:text="SCREEN - 1"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        android:id="@+id/screen11"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s1_1"
+            android:text="11:30 AM"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:background="@drawable/slot_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s1_2"
+            android:text="01:00 PM"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:background="@drawable/slot_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s1_3"
+            android:text="03:30 PM"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:background="@drawable/slot_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/screen11"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        android:id="@+id/screen12"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:10 PM"
+            android:id="@+id/s1_4"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:background="@drawable/slot_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s1_5"
+            android:text="06:30 PM"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:background="@drawable/slot_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s1_6"
+            android:text="11:10 PM"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:background="@drawable/slot_bg"/>
+    </LinearLayout>
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cardview1"
+        android:id="@+id/cardview2"
+        android:layout_height="150dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="#fff"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt11"
+                android:text="SCREEN - 2"
+                android:textColor="#000"
+                android:layout_gravity="center"
+
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt11"
+                android:layout_marginTop="10dp"
+                android:weightSum="3"
+                android:id="@+id/screen21"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:30 AM"
+                    android:id="@+id/s2_1"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:background="@drawable/slot_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01:00 PM"
+                    android:id="@+id/s2_2"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:background="@drawable/slot_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s2_3"
+                    android:text="03:30 PM"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:background="@drawable/slot_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/screen21"
+                android:layout_marginTop="10dp"
+                android:weightSum="3"
+                android:id="@+id/screen22"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04:10 PM"
+                    android:id="@+id/s2_4"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:background="@drawable/slot_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:30 PM"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/s2_5"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:background="@drawable/slot_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:10 PM"
+                    android:layout_weight="1"
+                    android:id="@+id/s2_6"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:background="@drawable/slot_bg"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
