@@ -1,4 +1,4 @@
-# BookMyTicket
+# cinema-ticket-booking
 
 BHC project on II Bvoc it 
 M.Sankaran
