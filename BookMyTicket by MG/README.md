@@ -5,6 +5,15 @@ BHC project on II Bvoc it M.Sankaran 215915143
 That’s my 2-year android project and Android studio was the platform to create this project this project is an only a protype model I’m not specifies any user name OR password for log-in , You can create your own username and password in register page
 
 # BASIC INTRO ABOUT THE PROJECT
-The primary purpose of making the cinema ticket booking system is to create an automatic online based system which will provide an easy and an alternate way to book a ticket for a movie. The customer will need to enter the information related to film after which the system will provide options to book the ticket. In this Online cinema ticket booking system, the staff of the cinema hall won’t have to do anything for the ticket booking as the process will be done by the customer through the web which will reduce the number of staff required in the booking counter
+“cinema ticket booking” is a web-based application developed using 
+Android Studio. This project is developed for ticket booking of movie online of any 
+theater of Trichy. Now a days, use of internet is used everywhere so it’s make easy 
+for user to book the tickets of movies online it saves the time of standing in the queue 
+to book the tickets.
+This project has mainly three functionalities it not only books the tickets but it 
+also provides some information to users which can be helpful to them like list of
+theaters in Trichy, list of phone numbers of these theaters, photo gallery many all these 
+facilities are provided here. And the most important part is it is easy to use for users
+they can directly see the useful information.
 
 #Android #xml #java #sql
