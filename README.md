@@ -1,7 +1,7 @@
 # cinema-ticket-booking
 
 BHC project on II Bvoc it 
-M.Sankaran
+M.Sankaranarayanan
 215915143
 
 # ABOUT MY PROJECT
