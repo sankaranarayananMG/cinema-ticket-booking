@@ -1,6 +1,6 @@
 # cinema-ticket-booking
 
-BHC project on II Bvoc it 
+BHC project on 2nd year Bvoc it 
 M.Sankaranarayanan
 215915143
 
